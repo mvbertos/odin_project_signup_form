@@ -1,0 +1,158 @@
+/* button color: #596d48 */
+/* background-color 1: #f9fafb */
+/* background-color 2: #ffffff */
+
+* {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  gap: 0px;
+}
+
+@font-face {
+  font-family: norse-bold;
+  src: url(assets/Norse-Bold.otf);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(assets/Roboto-Medium.ttf);
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  font-family: roboto;
+}
+
+/* SPLASHAREA */
+.splashSide {
+  position: relative;
+  width: 30%;
+  height: 100vh;
+}
+
+.splashSide img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.splashSide .card {
+  flex-direction: row;
+  display: flex;
+  position: absolute;
+  top: 20vh;
+  background-color: rgba(0, 0, 0, 0.571);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.splashSide .card img {
+  height: 150px;
+  width: 150px;
+  z-index: 0;
+  margin: 20px;
+  object-fit: contain;
+}
+
+.splashSide .card h1 {
+  font-family: norse-bold;
+  font-size: 100px;
+  color: white;
+}
+
+.splashSide .authorCredit {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  color: #f9fafb;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  gap: 2px;
+  font-size: 12px;
+}
+.splashSide .authorCredit a {
+  color: #f9fafb;
+}
+
+/* FORM */
+.formSide {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+  gap: 20px;
+}
+
+.formSide div {
+  flex: 1 1 0%;
+}
+
+.formSide p {
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.formSide .message {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 20px;
+  gap: 20px;
+}
+
+.formSide .area {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.086);
+  padding: 20px;
+}
+
+.formSide .area form {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+
+.formSide .area .field {
+  display: flex;
+  flex-direction: column;
+}
+
+.formSide .confirm {
+  margin: 20px;
+}
+
+.formSide .confirm button {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: #596d48;
+  color: white;
+  border: none;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.086);
+}
+
+.formSide .confirm .haveAccount {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.formSide .confirm .haveAccount a {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.formSide .confirm .haveAccount a:visited {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: bold;
+}
