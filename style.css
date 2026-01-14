@@ -90,7 +90,7 @@ body {
   flex: 1 1 0%;
 }
 
-.formSide p {
+.formSide h2 {
   font-family: roboto;
   font-weight: 500;
   font-size: 30px;
