@@ -134,11 +134,10 @@ body {
 }
 
 .formSide .area input {
-  border-color: rgba(0, 0, 0, 0.179);
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
   height: 30px;
   font-size: 15px;
-  border-radius: 5px;
-  border-width: 1px;
 }
 
 .formSide .area input:focus {
