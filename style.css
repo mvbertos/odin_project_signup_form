@@ -1,10 +1,6 @@
-/* button color: #596d48 */
-/* background-color 1: #f9fafb */
-/* background-color 2: #ffffff */
-
 :root {
   /* font sizes */
-  --fontLarger:100px;
+  --fontLarger: 100px;
   --fontLarge: 30px;
   --fontMedium: 15px;
   --fontSmall: 10px;
