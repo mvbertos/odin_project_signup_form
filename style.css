@@ -2,6 +2,22 @@
 /* background-color 1: #f9fafb */
 /* background-color 2: #ffffff */
 
+:root {
+  /* font sizes */
+  --fontLarger:100px;
+  --fontLarge: 30px;
+  --fontMedium: 15px;
+  --fontSmall: 10px;
+  /* Decoration */
+  --boxShadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.086);
+  /* Colors */
+  --formBgColor: #ffffff;
+  --bgColor: #f9fafb;
+  --btnConfirm: #596d48;
+  /* Spacing */
+  --margin: 20px;
+}
+
 * {
   padding: 0px 0px;
   margin: 0px 0px;
@@ -53,13 +69,13 @@ body {
   height: 150px;
   width: 150px;
   z-index: 0;
-  margin: 20px;
+  margin: var(--margin);
   object-fit: contain;
 }
 
 .splashSide .card h1 {
   font-family: norse-bold;
-  font-size: 100px;
+  font-size: var(--fontLarger);
   color: white;
 }
 
@@ -67,22 +83,23 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: row;
-  color: #f9fafb;
+  color: var(bg);
   width: 100%;
   position: absolute;
   bottom: 10px;
   gap: 2px;
-  font-size: 12px;
+  font-size: var(--fontSmall);
+  color: white;
 }
 .splashSide .authorCredit a {
-  color: #f9fafb;
+  color: white;
 }
 
 /* FORM */
 .formSide {
   display: flex;
   flex-direction: column;
-  background-color: #f9fafb;
+  background-color: var(--bgColor);
   gap: 20px;
 }
 
@@ -93,14 +110,14 @@ body {
 .formSide h2 {
   font-family: roboto;
   font-weight: 500;
-  font-size: 30px;
+  font-size: var(--fontLarge);
 }
 
 .formSide .message {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  margin: 20px;
+  margin: var(--margin);
   gap: 20px;
 }
 
@@ -108,8 +125,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: #ffffff;
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.086);
+  background-color: var(--formBgColor);
+  box-shadow: var(--boxShadow);
   padding: 20px;
 }
 
@@ -130,39 +147,39 @@ body {
 .formSide .area label {
   text-transform: uppercase;
   color: rgb(31, 31, 31);
-  font-size: 12px;
+  font-size: var(--fontSmall);
 }
 
 .formSide .area input {
   border: 1px solid #e5e7eb;
   border-radius: 5px;
   height: 30px;
-  font-size: 15px;
+  font-size: var(--fontMedium);
 }
 
 .formSide .area input:focus {
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.086);
+  box-shadow: var(--boxShadow);
   outline: solid 1px blue;
 }
 
 .formSide .area input:invalid {
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.086);
+  box-shadow: var(--boxShadow);
   outline: solid 1px red;
 }
 
 .formSide .confirm {
-  margin: 20px;
+  margin: var(--margin);
 }
 
 .formSide .confirm button {
   height: 50px;
   width: 200px;
   border-radius: 10px;
-  background-color: #596d48;
+  background-color: var(--btnConfirm);
   color: white;
   border: none;
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.086);
-  font-size: 15px;
+  box-shadow: var(--boxShadow);
+  font-size: var(--fontMedium);
   font-weight: bold;
 }
 
@@ -170,18 +187,18 @@ body {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
-  font-size: 15px;
+  font-size: var(--fontMedium);
   gap: 10px;
 }
 
 .formSide .confirm .haveAccount a {
-  color: #596d48;
+  color: var(--btnConfirm);
   text-decoration: none;
   font-weight: bold;
 }
 
 .formSide .confirm .haveAccount a:visited {
-  color: #596d48;
+  color: var(--btnConfirm);
   text-decoration: none;
   font-weight: bold;
 }
